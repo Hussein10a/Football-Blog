@@ -1,0 +1,145 @@
+body {
+    margin: 0;
+    font-family: "Segoe UI", sans-serif;
+    background-color: #f4f4f4;
+    color: #222;
+  }
+  
+  /* Responsive Design for News Page */
+  @media (max-width: 768px) {
+    header {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 10px;
+    }
+  
+    .search-bar input {
+      width: 100%;
+      margin-top: 10px;
+    }
+  
+    nav {
+      margin-top: 10px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+    }
+  
+    .news-section {
+      grid-template-columns: 1fr;
+      padding: 15px;
+    }
+  
+    .news-card img {
+      height: 200px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .logo {
+      font-size: 1.2rem;
+    }
+  
+    .search-bar input {
+      font-size: 0.9rem;
+    }
+  
+    nav a {
+      font-size: 0.9rem;
+    }
+  
+    .news-card h3 {
+      font-size: 1rem;
+    }
+  
+    .news-card p {
+      font-size: 0.85rem;
+    }
+  }
+  
+  header {
+    background-color: #1a1a1a;
+    color: white;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .logo {
+    font-size: 1.5rem;
+  }
+  
+  .search-bar input {
+    padding: 10px 15px;
+    width: 300px; /* Increased width */
+    max-width: 100%;
+    border-radius: 5px;
+    border: none;
+    font-size: 1rem;
+  }
+  
+  nav a {
+    margin-left: 20px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .news-section {
+    padding: 30px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+  }
+  
+  .news-card {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s;
+  }
+  
+  .news-card:hover {
+    transform: scale(1.02);
+  }
+  
+  .news-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+  }
+  
+  .news-card .content {
+    padding: 15px;
+  }
+  
+  .news-card h3 {
+    margin: 10px 0;
+    font-size: 1.1rem;
+  }
+  
+  .news-card p {
+    font-size: 0.9rem;
+    color: #555;
+  }
+  
+  .news-card a {
+    display: inline-block;
+    margin-top: 10px;
+    color: #0066cc;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #1a1a1a;
+    color: white;
+    margin-top: 40px;
+  }
+  
+  
