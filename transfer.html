@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Football Transfers</title>
+    <link rel="stylesheet" href="transfer.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo">⚽ OffsideChronicles</div>
+      <div class="search-bar">
+        <input
+          type="text"
+          id="searchInput"
+          placeholder="Search player name..."
+        />
+      </div>
+      <nav class="nav-buttons">
+        <a href="index.html">Home</a>
+        <a href="news.html">News</a>
+        <a href="transfer.html" class="active">Transfers</a>
+      </nav>
+    </header>
+
+    <main>
+      <h1>Recent Player Transfers</h1>
+
+      <div class="filters">
+        <select id="fromTeamFilter">
+          <option value="">Filter by From Team</option>
+          <option value="Borussia Dortmund">Borussia Dortmund</option>
+          <option value="Tottenham Hotspur">Tottenham Hotspur</option>
+          <option value="West Ham">West Ham</option>
+          <!-- Add more teams if needed -->
+        </select>
+
+        <select id="feeFilter">
+          <option value="">Filter by Transfer Fee</option>
+          <option value="over100">Over €100M</option>
+          <option value="under100">Under €100M</option>
+        </select>
+      </div>
+
+      <section class="transfer-list">
+        <div class="player-card">
+          <h2>Jude Bellingham</h2>
+          <p>From: Borussia Dortmund</p>
+          <p>To: Real Madrid</p>
+          <p>Transfer Fee: €103M</p>
+        </div>
+        <div class="player-card">
+          <h2>Harry Kane</h2>
+          <p>From: Tottenham Hotspur</p>
+          <p>To: Bayern Munich</p>
+          <p>Transfer Fee: €100M</p>
+        </div>
+        <div class="player-card">
+          <h2>Declan Rice</h2>
+          <p>From: West Ham</p>
+          <p>To: Arsenal</p>
+          <p>Transfer Fee: €116M</p>
+        </div>
+        <!-- Add more players as needed -->
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 OffsideChronicles. All rights reserved.</p>
+    </footer>
+
+    <script src="transfer.js"></script>
+  </body>
+</html>
